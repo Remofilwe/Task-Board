@@ -2,7 +2,7 @@
 Responsive, drag-able task board
 
 # assessmentdb.xml
-run php server
+1. run php server
 add your phpMyAdmin login details
 username = root
 password = test
