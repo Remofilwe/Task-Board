@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Mar 03, 2020 at 12:42 PM
+- Server version: 10.4.10-MariaDB
+- PHP Version: 7.3.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="assessmentdb" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="tbl_status">
+                CREATE TABLE `tbl_status` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `status_name` varchar(55) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tbl_task">
+                CREATE TABLE `tbl_task` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `title` varchar(255) NOT NULL,
+                  `description` text NOT NULL,
+                  `project_name` varchar(255) NOT NULL,
+                  `status_id` int(11) NOT NULL,
+                  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'assessmentdb'
+    -->
+    <database name="assessmentdb">
+        <!-- Table tbl_status -->
+        <table name="tbl_status">
+            <column name="id">1</column>
+            <column name="status_name">To Do</column>
+        </table>
+        <table name="tbl_status">
+            <column name="id">2</column>
+            <column name="status_name">Doing</column>
+        </table>
+        <table name="tbl_status">
+            <column name="id">3</column>
+            <column name="status_name">Delayed</column>
+        </table>
+        <table name="tbl_status">
+            <column name="id">4</column>
+            <column name="status_name">Done</column>
+        </table>
+        <!-- Table tbl_task -->
+        <table name="tbl_task">
+            <column name="id">1</column>
+            <column name="title">PHP Basi Fundamentals</column>
+            <column name="description">Introduction to PHP</column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">4</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">2</column>
+            <column name="title">PHP Forms</column>
+            <column name="description">Form validation, and handling</column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">3</column>
+            <column name="title">PHP Advanced</column>
+            <column name="description">more advanced PHP </column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">2</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">4</column>
+            <column name="title">PHP OOP</column>
+            <column name="description">writing PHP code on OOP style</column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">5</column>
+            <column name="title">PHP XML</column>
+            <column name="description">structuring data for sharing across websites</column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">6</column>
+            <column name="title">PHP AJAX</column>
+            <column name="description">updating part of a web page without reloading the whole page  </column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">7</column>
+            <column name="title">MySQL Database</column>
+            <column name="description">Connecting and manipulating the database  </column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+        <table name="tbl_task">
+            <column name="id">8</column>
+            <column name="title">PHP Projects</column>
+            <column name="description">practice project in PHP  </column>
+            <column name="project_name">StartTuts</column>
+            <column name="status_id">3</column>
+            <column name="created_at">2020-03-03 10:14:24</column>
+        </table>
+    </database>
+</pma_xml_export>
