@@ -7,3 +7,6 @@ Responsive, drag-able task board
 3. username = root
 4. password = test
 5. import assessmentdb.xml database
+
+# run web browser
+# open localhost/task to run the code
